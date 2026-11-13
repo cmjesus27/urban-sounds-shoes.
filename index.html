@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Urban Sounds Shoes: sneakers exclusivos, pedidos especiales y venta al por mayor.">
+  <title>Urban Sounds Shoes | Sneakers con identidad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">ENVÍOS A TODO COSTA RICA · VENTA MINORISTA Y AL POR MAYOR</div>
+  <header class="site-header">
+    <a class="brand" href="#inicio"><span class="brand-mark">US</span><span>URBAN<span class="brand-light">SOUNDS</span><small>SHOES & CULTURE</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+    <nav id="mainNav">
+      <a href="#coleccion">Colección</a><a href="#mayorista">Mayoristas</a><a href="#especiales">Pedidos especiales</a><a href="#entregas">Entregas</a>
+    </nav>
+    <div class="header-actions">
+      <button class="text-button" id="accountBtn">Mi cuenta</button>
+      <button class="cart-button" id="cartBtn">Bolsa <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">NO SIGAS EL RITMO. CREA EL TUYO.</p>
+        <h1>Tu estilo.<br><em>Tu sonido.</em><br>Tu par.</h1>
+        <p class="hero-description">Sneakers con inspiración musical, diseños únicos y opciones para quienes buscan algo fuera de lo común.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#coleccion">Explorar colección <span>↗</span></a><a class="under-link" href="#especiales">Diseña tu par</a></div>
+        <div class="hero-note"><span class="status-dot"></span> Piezas seleccionadas · Pedidos personalizados</div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-sticker">DROP<br>YOUR<br>STYLE</div>
+        <div class="hero-shoe"><div class="shoe-label">URBAN SOUNDS / 001</div><div class="shoe-shape"><span></span></div></div>
+        <div class="hero-caption">EDICIÓN<br><b>LIMITADA</b></div>
+      </div>
+      <div class="hero-bottom"><span>01 / 04</span><span>SCROLL PARA DESCUBRIR ↓</span><span>SAN JOSÉ · COSTA RICA</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Servicios"><div>DISEÑOS EXCLUSIVOS <b>✳</b> PEDIDOS ESPECIALES <b>✳</b> VENTA MAYORISTA <b>✳</b> ENTREGA A DOMICILIO <b>✳</b> DISEÑOS EXCLUSIVOS <b>✳</b></div></section>
+
+    <section class="section collection-section" id="coleccion">
+      <div class="section-heading"><div><p class="eyebrow">SELECCIÓN URBAN SOUNDS</p><h2>Encuentra tu <em>frecuencia.</em></h2></div><p>Modelos inspirados en la estética de la música urbana. Cada diseño tiene personalidad propia.</p></div>
+      <div class="filter-row"><div class="filters" id="filters"><button class="filter active" data-filter="all">Todos</button><button class="filter" data-filter="travis">Travis-inspired</button><button class="filter" data-filter="drake">Drake-inspired</button><button class="filter" data-filter="metro">Metro-inspired</button><button class="filter" data-filter="badbunny">Bad Bunny-inspired</button></div><span class="product-count" id="productCount">04 PRODUCTOS</span></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="artist-strip">
+      <div class="artist-copy"><p class="eyebrow">MÚSICA QUE SE LLEVA PUESTA</p><h2>Más que sneakers.<br><em>Una declaración.</em></h2><p>Explora siluetas y paletas de color que toman referencias de distintas escenas musicales. No somos una tienda oficial ni estamos afiliados con los artistas mencionados.</p></div>
+      <div class="artist-list"><div><span>01</span><b>TRAVIS-INSPIRED</b><i>Earth tones / Utility</i></div><div><span>02</span><b>DRAKE-INSPIRED</b><i>Minimal / Premium</i></div><div><span>03</span><b>METRO-INSPIRED</b><i>Dark / Futuristic</i></div><div><span>04</span><b>BAD BUNNY-INSPIRED</b><i>Bold / Caribbean</i></div></div>
+    </section>
+
+    <section class="section business-section" id="mayorista">
+      <div class="business-visual"><div class="big-number">B2B</div><div class="business-tag">BUILT FOR<br>YOUR BUSINESS</div></div>
+      <div class="business-copy"><p class="eyebrow">CRECE CON NOSOTROS</p><h2>¿Tienes una<br>zapatería?</h2><p>Abastece tu negocio con nuestros modelos. Ofrecemos precios especiales por volumen, atención para comercios y coordinación de pedidos mayoristas.</p><ul><li>Precios por cantidad</li><li>Atención personalizada para tiendas</li><li>Coordinación de entregas comerciales</li></ul><button class="button button-dark" id="wholesaleBtn">Solicitar catálogo mayorista ↗</button></div>
+    </section>
+
+    <section class="special-section" id="especiales">
+      <div class="special-content"><p class="eyebrow">TU IDEA, NUESTRO PRÓXIMO DROP</p><h2>Un par que<br>nadie más <em>tenga.</em></h2><p>¿Buscas un modelo difícil de encontrar, una combinación de colores específica o un diseño inspirado en tu artista favorito? Cuéntanos qué tienes en mente.</p><button class="button button-primary" id="customBtn">Crear pedido especial ↗</button></div>
+      <div class="special-side"><div class="custom-card"><span>PERSONALIZACIÓN</span><strong>01—01</strong><div class="custom-lines"></div><small>MADE TO STAND OUT.</small></div></div>
+    </section>
+
+    <section class="section delivery-section" id="entregas">
+      <div class="section-heading"><div><p class="eyebrow">COMPRAR ES FÁCIL</p><h2>Del carrito<br><em>a tu puerta.</em></h2></div><p>Elige cómo quieres recibir tu pedido. Coordinamos cada entrega contigo antes de despachar.</p></div>
+      <div class="service-grid"><article><span>01</span><div class="service-icon">⌂</div><h3>Entrega a domicilio</h3><p>Recibe tu compra en la dirección que indiques. La cobertura y el costo se confirman al coordinar el pedido.</p></article><article><span>02</span><div class="service-icon">▣</div><h3>Retiro en zapatería</h3><p>Selecciona retiro en un punto de venta participante y recoge cuando confirmemos que está listo.</p></article><article><span>03</span><div class="service-icon">⇄</div><h3>Envíos mayoristas</h3><p>Coordinamos entregas por volumen para zapaterías y comercios en Costa Rica.</p></article></div>
+    </section>
+
+    <section class="newsletter"><div><p class="eyebrow">NO TE PIERDAS EL PRÓXIMO DROP</p><h2>Stay in the <em>loop.</em></h2></div><form id="newsletterForm"><input type="email" id="newsletterEmail" placeholder="Tu correo electrónico" required><button type="submit">Suscribirme ↗</button></form><p id="newsletterMessage" class="form-message"></p></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#inicio"><span class="brand-mark">US</span><span>URBAN<span class="brand-light">SOUNDS</span><small>SHOES & CULTURE</small></span></a><p>© 2026 URBAN SOUNDS SHOES. Concepto de tienda independiente.</p><div><a href="#coleccion">Colección</a><a href="#mayorista">Mayoristas</a><a href="#entregas">Entregas</a></div></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Carrito de compras"><div class="drawer-header"><h2>Tu bolsa <span id="drawerCount">(0)</span></h2><button class="close-btn" data-close>×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-footer"><div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">₡0</strong></div><p>El envío se calcula al coordinar la entrega.</p><button class="button button-primary full-button" id="checkoutBtn">Continuar al pago ↗</button></div></aside>
+
+  <div class="modal" id="accountModal"><button class="close-btn modal-close" data-close>×</button><p class="eyebrow">ÁREA DE CLIENTES</p><h2>Tu cuenta.</h2><p class="modal-intro">Selecciona el perfil que representa tu compra. Esta demo guarda el perfil localmente en este navegador.</p><label>Tipo de usuario<select id="userRole"><option value="cliente">Cliente individual</option><option value="mayorista">Comercio / Mayorista</option><option value="admin">Administrador (demo)</option></select></label><label>Nombre<input id="userName" placeholder="Tu nombre"></label><label>Correo electrónico<input id="userEmail" type="email" placeholder="nombre@correo.com"></label><button class="button button-primary full-button" id="saveAccount">Guardar perfil</button><p id="accountMessage" class="form-message"></p></div>
+
+  <div class="modal wide-modal" id="checkoutModal"><button class="close-btn modal-close" data-close>×</button><p class="eyebrow">CASI TUYO</p><h2>Finalizar pedido.</h2><form id="checkoutForm"><div class="form-grid"><label>Nombre completo<input id="checkoutName" required placeholder="Nombre y apellidos"></label><label>Teléfono<input id="checkoutPhone" required placeholder="8888-8888"></label><label class="span-two">Correo electrónico<input id="checkoutEmail" type="email" required placeholder="correo@ejemplo.com"></label><label>Método de entrega<select id="deliveryMethod"><option value="domicilio">Entrega a domicilio</option><option value="retiro">Retiro en zapatería</option><option value="mayorista">Entrega mayorista (coordinar)</option></select></label><label>Método de pago<select id="paymentMethod"><option>Sinpe Móvil (coordinar)</option><option>Transferencia bancaria</option><option>Tarjeta (pasarela por integrar)</option><option>Pago contra entrega (sujeto a cobertura)</option></select></label><label class="span-two">Dirección / indicaciones<textarea id="checkoutAddress" rows="2" placeholder="Provincia, cantón, señas o punto de retiro"></textarea></label></div><p class="checkout-note">Esta es una demostración de frontend: no procesa pagos ni cobra tarjetas. El negocio debe confirmar disponibilidad, envío y pago por un canal seguro.</p><button class="button button-primary full-button" type="submit">Enviar solicitud de pedido ↗</button></form><div id="orderConfirmation" class="confirmation hidden"></div></div>
+
+  <div class="modal" id="requestModal"><button class="close-btn modal-close" data-close>×</button><p class="eyebrow" id="requestEyebrow">HABLEMOS</p><h2 id="requestTitle">Cuéntanos tu idea.</h2><p class="modal-intro" id="requestIntro">Completa los datos y prepara tu solicitud.</p><form id="requestForm"><label>Nombre<input id="requestName" required placeholder="Tu nombre"></label><label>Correo<input id="requestEmail" type="email" required placeholder="correo@ejemplo.com"></label><label>Tipo de solicitud<select id="requestType"><option>Pedido especial / diseño único</option><option>Catálogo y precios mayoristas</option></select></label><label>Detalles<textarea id="requestDetails" rows="4" required placeholder="Modelo, talla, cantidad, colores o referencias..."></textarea></label><button class="button button-primary full-button" type="submit">Preparar solicitud ↗</button></form><p id="requestMessage" class="form-message"></p></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
